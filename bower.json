@@ -1,0 +1,22 @@
+{
+  "name": "plumpjs-tabs",
+  "version": "0.1.0",
+  "authors": [
+    "James Martin-Davies <jamesmd@plumpdigitial.co.uk>"
+  ],
+  "description": "Simple tab implementation for displaying content.",
+  "main": "tabs.js",
+  "keywords": [
+    "plumpjs",
+    "tabs",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
