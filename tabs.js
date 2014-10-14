@@ -1,6 +1,5 @@
 // *
 // *  PlumpJS: Tabs
-// *  @utilizes: MooTools More
 // *
 var Tabs = new Class({
 
