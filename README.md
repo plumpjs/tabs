@@ -56,4 +56,4 @@ By default, we are setting the active and hidden class selectors. Essentially, a
 |---	    		|---	    |---	 			|---    			|
 | activeTabClass  	| String   	| 'active'			| Adds a class selector to the current active tab. |
 | hiddenClass  		| String  	| 'hide'			| Adds a class selector to all current hidden content. 		|
-| initialTab  		| Number  	| 0					| Default initial tab on load |
+| initialTab  		| Number  	| 0					| Default initial tab to show on load. |
