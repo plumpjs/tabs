@@ -7,8 +7,9 @@ var Tabs = new Class({
 
 	// Create default options.
 	options: {
-		activeTab: 0,
-		hideAll: false
+		initialTab: 0,
+		activeTabClass: 'active',
+		hiddenClass: 'hide'
 	},
 
 	// Initialize the constructor.
@@ -16,46 +17,27 @@ var Tabs = new Class({
 		this.el = $(el);
 		this.setOptions(options);
 
-		// Store our items, including both tabs and content.
-		this.item = el.getElements('li').getChildren();
-
 		// Store tabs.
-		this.tab = this.item[0];
+		this.tabs = this.el.getElements('li a');
 
 		// Store content.
-		this.content = this.item[1];
+		this.tabContents = this.el.getChildren('div');
 
-		// Hide all content by default.
-		this.hide(this.content);
-
-		// If we decide not to hide all by default,
-		// enable the active content defined in our options.
-		if (!this.options.hideAll) {
-			this.show(this.content[this.options.activeTab]);
-		}
-
-		// On each tab function...
-		this.tab.each(function(tab, i) {
+		// On each tab function.
+		this.tabs.each(function(tab, i) {
 			// Bind click event handler to run @switchTab function.
 			tab.addEvent('click', this.switchTab.bind(this, i));
 		}, this);
+
+		this.switchTab(this.options.initialTab);
 	},
 
-	// Function to toggle visibility of the content.
 	switchTab: function(idx) {
-		// Hide it first.
-		this.hide(this.content);
-		// And show our current tab based on the indexing anchor.
-		this.show(this.content[idx]);
-	},
-
-	// Hide functionality.
-	hide: function(element) {
-		return element.setStyle('display', 'none');
-	},
-
-	// Show functionality.
-	show: function(element) {
-		return element.setStyle('display', 'block');
+		// Hide the content first and remove class from the active tab.
+		this.tabContents.addClass(this.options.hiddenClass);
+		this.tabs.removeClass(this.options.activeTabClass);
+		// Show the new content and add class to the active tab.
+		this.tabs[idx].addClass(this.options.activeTabClass);
+		this.tabContents[idx].removeClass(this.options.hiddenClass);
 	}
 });
