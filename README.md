@@ -57,3 +57,20 @@ By default, we are setting the active and hidden class selectors. Essentially, a
 | activeTabClass  	| String   	| 'active'			| Adds a class selector to the current active tab. |
 | hiddenClass  		| String  	| 'hide'			| Adds a class selector to all current hidden content. 		|
 | initialTab  		| Number  	| 0					| Default initial tab to show on load. |
+
+Apply options by passing in a second array of arguments:
+
+````
+$$('.js-tabs').each(function(el) {
+
+	new Tabs(el, { 
+		// Set active tab class
+		activeTabClass: 'myActiveClassSelector', 
+		// Set hidden content class
+		hiddenClass: 'myHiddenContentClassSelector',
+		// Set initial tab to show on load
+		initialTab: 0
+	});
+
+});
+````
