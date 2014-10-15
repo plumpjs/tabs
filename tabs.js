@@ -41,7 +41,7 @@ var Tabs = new Class({
 		}, this);
 	},
 
-	// Function to toggle the visibility of each tab.
+	// Function to toggle visibility of the content.
 	switchTab: function(idx) {
 		// Hide it first.
 		this.hide(this.content);
