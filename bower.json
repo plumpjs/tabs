@@ -1,8 +1,9 @@
 {
   "name": "plumpjs-tabs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
-    "James Martin-Davies <jamesmd@plumpdigitial.co.uk>"
+    "James Martin-Davies <jamesmd@plumpdigitial.co.uk>",
+    "James Howard <james@plumpdigital.co.uk>"
   ],
   "description": "Simple tab implementation for displaying content.",
   "main": "tabs.js",
