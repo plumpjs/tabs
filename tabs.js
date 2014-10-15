@@ -28,9 +28,10 @@ var Tabs = new Class({
 		// Hide all content by default.
 		this.hide(this.content);
 
-		// If we decide to hide all by default, do so.
+		// If we decide not to hide all by default,
+		// enable the active content defined in our options.
 		if (!this.options.hideAll) {
-			this.content[this.options.activeTab].toggle();
+			this.show(this.content[this.options.activeTab]);
 		}
 
 		// On each tab function...
