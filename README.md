@@ -50,7 +50,7 @@ This will now look for any markup in the HTML with a `.js-tabs` selector and ini
 
 ## Default options
 
-By default, we are setting the active and hidden class selectors. Essentially, adding `.hide` to our tabbed content will inherit styling, such as `.hide { display: none; }`. Instead of using javascript to add inline HTML, we're using class sectors to define the styling. 
+By default, we are setting the active and hidden class selectors. Essentially, adding `.hide` to our tabbed content will inherit styling, such as `.hide { display: none; }`. Instead of using javascript to add inline style declarations, we're injecting class sectors to define the styling. 
 
 | Option  			| Type   	| Default Value		| Description		|
 |---	    		|---	    |---	 			|---    			|
