@@ -1,6 +1,9 @@
-// *
-// *  PlumpJS: Tabs
-// *
+/* exported Tabs */
+
+/**
+ *  PlumpJS: Tabs
+ *  Simple tab UI implementation.
+ */
 var Tabs = new Class({
 
 	Implements: Options,
