@@ -5,7 +5,7 @@ MooTools tabbed content implementation.
 
 ## Usage
 
-Using extremely basic HTML:
+Using extremely basic HTML, we can create a set of tabbed content. We're using ID selectors to identify the relationship between the tabs and content. 
 
 ````HTML
 <div class="js-tabs">
