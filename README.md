@@ -7,7 +7,7 @@ MooTools tabbed content implementation.
 
 Using extremely basic HTML:
 
-````
+````HTML
 <div class="js-tabs">
 	<ul>
 		<li>
@@ -34,7 +34,7 @@ Using extremely basic HTML:
 
 Now implement the loop for each `Tabs` call:
 
-````
+````JavaScript
 $$('.js-tabs').each(function(el) {
 
 	new Tabs(el, { 
@@ -60,7 +60,7 @@ By default, we are setting the active and hidden class selectors. Essentially, a
 
 Apply options by passing in a second array of arguments:
 
-````
+````JavaScript
 $$('.js-tabs').each(function(el) {
 
 	new Tabs(el, { 
